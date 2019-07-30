@@ -20,10 +20,16 @@ Setup
     3. They draw one more card without showing anyone for their Sanity level.
     4. Shuffle the deck.
 
-Boomers start with +1 Finances.
-Doomers start with -1 Sanity.
-Zoomers start with +1 Technology
-Bloomers start with +1 Social Credit
+### Additional (de)buffs
+
+* Boomers start with +1 Finances and +1 Sanity.
+* Doomers start with -2 Sanity.
+* Zoomers start with +1 Technology and +1 Sanity.
+* Bloomers start with +1 Social Credit and +1 Sanity.
+
+### Notes
+
+You cannot start with 0 Sanity or 10 of any other stat. If your draw and (de)buffs would give you such, add/subtract such that your Sanity is no lower than 1 and other stats are no greater than 9.
 
 Play
 ----
@@ -37,7 +43,7 @@ The boomer begins, because of course, then play goes clockwise. For each turn, t
  A | You go on a mediation retreat (+1 sanity)
  2 | You raise the rent on your rental property on someone (+1 finances)
  3 | You learn how to text from someone (+1 technology)
- 4 | You post a Minions meme that gets shared to someone's Facebook wall (+1 social credit)
+ 4 | You post a Minions meme that gets shared to *the doomer's* Facebook wall (+1 social credit)
  5 | You give someone a loan (-1 finances, +1 social credit)
  6 | You buy a newfagled phone (-1 finances, +1 technology)
  7 | You talk to the manager who is *the bloomer* (-1 social credit, +1 finances)
@@ -103,7 +109,7 @@ The boomer begins, because of course, then play goes clockwise. For each turn, t
 Win conditions
 --------------
 
-You win if you max out two stats to 20 or your sanity reaches zero. Maybe then you'll actually be happy!
+You win if you max out two stats to 10 or your sanity reaches zero. Maybe then you'll actually be happy!
 
 Peak Millenial play test
 ========================
@@ -119,7 +125,7 @@ Turns per game
 
 Min | Average | Max
 ----|---------|----
-  1 |       8 |  45
+  2 |      10 |  51
 
 Draws
 -----
@@ -131,29 +137,29 @@ Wins
 
 Boomer | Doomer | Zoomer | Bloomer
 -------|--------|--------|--------
-23.77% | 26.16% | 25.84% |  24.23%
+23.45% | 25.18% | 26.97% |  24.40%
 
 Wins by
 -------
 
 Sanity | Max stats
 -------|----------
-81.19% |    18.81%
+72.76% |    27.24%
 
 Outs
 ----
 
 Boomer | Doomer | Zoomer | Bloomer
 -------|--------|--------|--------
- 0.00% |  0.00% |  0.00% |   0.00%
+ 2.45% | 21.28% |  0.00% |   0.00%
 
 Average stats
 -------------
 
 *Stat*        | Boomer | Doomer | Zoomer | Bloomer
 --------------|--------|--------|--------|--------
-Finances      |      8 |      7 |      7 |       7
-Technology    |      7 |      7 |      8 |       7
-Social credit |      7 |      6 |      7 |       8
-Sanity        |      5 |      3 |      4 |       4
+Finances      |      6 |      6 |      6 |       6
+Technology    |      6 |      6 |      6 |       6
+Social credit |      6 |      5 |      6 |       6
+Sanity        |      5 |      2 |      5 |       5
 

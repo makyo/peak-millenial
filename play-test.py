@@ -1,3 +1,4 @@
+import math
 import random
 
 
@@ -20,9 +21,9 @@ ACTIONS = (
     {'finance': 1, 'tech': 1, 'social': 1, 'sanity': 1},    # K
 )
 TARGETS = {
-    'boomer': [None, None, None, None, None, None, None, 'bloomer', 'zoomer', None, None, None, None, None],
+    'boomer': [None, None, None, None, 'doomer', None, None, 'bloomer', 'zoomer', None, None, None, None, None],
     'doomer': [None, None, None, None, None, 'bloomer', None, 'boomer', None, None, None, None, None, None],
-    'zoomer': [None, None, None, None, None, 'bloomer', None, 'boomer', None, None, None, None, None, None],
+    'zoomer': [None, None, None, None, None, 'doomer', None, 'boomer', None, None, None, None, None, None],
     'bloomer': [None, None, None, None, None, 'zoomer', None, 'boomer', None, None, None, None, None, None],
 }
 MAX_STAT = 10
@@ -61,14 +62,18 @@ class PeakMillenial(object):
         self.deck = [0, 0] + (list(range(0, 14)) * 4)
         random.shuffle(self.deck)
         self.players = {
-            'boomer': Player(2, 0, 0, 0),
-            'doomer': Player(0, 0, 0, -1),
-            'zoomer': Player(0, 2, 0, 0),
-            'bloomer': Player(0, 0, 2, 0),
+            'boomer': Player(1, 0, 0, 1),
+            'doomer': Player(0, 0, 0, -2),
+            'zoomer': Player(0, 1, 0, 1),
+            'bloomer': Player(0, 0, 1, 1),
         }
         for role in ROLES:
             for stat in STATS:
                 self.players[role].add_stat(stat, random.randint(1, 13))
+                if stat == 'sanity':
+                    self.players[role].set_stat(stat, max(1, self.players[role].get_stat(stat)))
+                else:
+                    self.players[role].set_stat(stat, min(MAX_STAT - 1, self.players[role].get_stat(stat)))
 
     def run(self):
         curr = 0
@@ -97,18 +102,24 @@ class PeakMillenial(object):
             #if ((player.finance == 0 and player.social == 0) or
             #        (player.finance == 0 and player.tech == 0) or
             #        (player.social == 0 and player.tech == 0)):
-            if player.finance == 0 or player.social == 0 or player.tech == 0:
+            if (player.finance == 0 or player.social == 0 or player.tech == 0):
                 player.out == True
             if player.out:
                 out_count += 1
                 continue
             if player.sanity == 0:
+                if self.turn == 0:
+                    player.out = True
+                    continue
                 player.win = True
                 player.win_by = 'sanity'
                 return True
             if ((player.finance == MAX_STAT and player.social == MAX_STAT) or
                     (player.finance == MAX_STAT and player.tech == MAX_STAT) or
                     (player.social == MAX_STAT and player.tech == MAX_STAT)):
+                if self.turn == 0:
+                    player.out = True
+                    continue
                 player.win_by = 'max_stat'
                 player.win = True
                 return True
@@ -152,10 +163,8 @@ def test(runs=100, subtract_from_others=False):
         game.run()
         games.append(game)
         all_turns += game.turn + 1
-        if game.turn + 1 > max_turns:
-            max_turns = game.turn + 1
-        if game.turn + 1 < min_turns:
-            min_turns = game.turn + 1
+        max_turns = max(game.turn + 1, max_turns)
+        min_turns = min(game.turn + 1, min_turns)
         if game.draw:
             draws += 1
         for role in ROLES:
