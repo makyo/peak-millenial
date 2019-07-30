@@ -32,7 +32,7 @@ The boomer begins, because of course, then play goes clockwise. For each turn, t
 
 ### Boomer
 
-   | Result
+&nbsp; | Result
 ---|---
  A | You go on a mediation retreat (+1 sanity)
  2 | You raise the rent on your rental property on someone (+1 finances)
@@ -49,7 +49,7 @@ The boomer begins, because of course, then play goes clockwise. For each turn, t
 
 ### Doomer
 
-   | Result
+&nbsp; | Result
 ---|---
  A | You finally seek out therapy (+1 sanity)
  2 | You get an essay published on The Guardian taking down someone (+1 finances) 
@@ -66,7 +66,7 @@ The boomer begins, because of course, then play goes clockwise. For each turn, t
 
 ### Zoomer
 
-   | Result
+&nbsp; | Result
 ---|---
  A | You get invited to a product beta (+1 sanity)
  2 | 
@@ -83,7 +83,7 @@ The boomer begins, because of course, then play goes clockwise. For each turn, t
 
 ### Bloomer
 
-   | Result
+&nbsp; | Result
 ---|---
  A | You get into TikTok (+1 sanity)
  2 | 
