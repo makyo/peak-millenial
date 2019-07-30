@@ -19,6 +19,12 @@ ACTIONS = (
     {'finance': -1, 'tech': -1, 'social': -1, 'sanity': -1},    # Q
     {'finance': 1, 'tech': 1, 'social': 1, 'sanity': 1},    # K
 )
+TARGETS = {
+    'boomer': [None, None, None, None, None, None, None, 'bloomer', 'zoomer', None, None, None, None, None],
+    'doomer': [None, None, None, None, None, 'bloomer', None, 'boomer', None, None, None, None, None, None],
+    'zoomer': [None, None, None, None, None, 'bloomer', None, 'boomer', None, None, None, None, None, None],
+    'bloomer': [None, None, None, None, None, 'zoomer', None, 'boomer', None, None, None, None, None, None],
+}
 MAX_STAT = 10
 
 
@@ -55,10 +61,10 @@ class PeakMillenial(object):
         self.deck = [0, 0] + (list(range(0, 14)) * 4)
         random.shuffle(self.deck)
         self.players = {
-            'boomer': Player(1, 0, 0, 0),
+            'boomer': Player(2, 0, 0, 0),
             'doomer': Player(0, 0, 0, -1),
-            'zoomer': Player(0, 1, 0, 0),
-            'bloomer': Player(0, 0, 1, 0),
+            'zoomer': Player(0, 2, 0, 0),
+            'bloomer': Player(0, 0, 2, 0),
         }
         for role in ROLES:
             for stat in STATS:
@@ -67,15 +73,19 @@ class PeakMillenial(object):
     def run(self):
         curr = 0
         for self.turn in range(0, len(self.deck)):
-            curr_action = ACTIONS[self.deck[self.turn]]
+            card = self.deck[self.turn]
+            curr_action = ACTIONS[card]
             curr_player = self.players[ROLES[curr]]
+            target_role = TARGETS[ROLES[curr]][card]
             curr = (curr + 1) % 4
-            next_player = self.players[ROLES[curr]]
+            target = self.players[target_role if target_role is not None else ROLES[curr]]
             for stat in STATS:
                 curr_player.add_stat(stat, curr_action[stat])
+                if self.deck[self.turn] == 0:
+                    continue
                 if self.subtract_from_others and stat != 'sanity':
-                    next_player.add_stat(stat, -curr_action[stat])
-            next_player.add_stat('sanity', -1)
+                    target.add_stat(stat, -curr_action[stat])
+            target.add_stat('sanity', -1)
             if self.check_endgame():
                 return
         self.draw = True
@@ -84,9 +94,10 @@ class PeakMillenial(object):
         out_count = 0
         for role in ROLES:
             player = self.players[role]
-            if ((player.finance == 0 and player.social == 0) or
-                    (player.finance == 0 and player.tech == 0) or
-                    (player.social == 0 and player.tech == 0)):
+            #if ((player.finance == 0 and player.social == 0) or
+            #        (player.finance == 0 and player.tech == 0) or
+            #        (player.social == 0 and player.tech == 0)):
+            if player.finance == 0 or player.social == 0 or player.tech == 0:
                 player.out == True
             if player.out:
                 out_count += 1
@@ -95,9 +106,9 @@ class PeakMillenial(object):
                 player.win = True
                 player.win_by = 'sanity'
                 return True
-            if ((player.finance == 20 and player.social == 20) or
-                    (player.finance == 20 and player.tech == 20) or
-                    (player.social == 20 and player.tech == 20)):
+            if ((player.finance == MAX_STAT and player.social == MAX_STAT) or
+                    (player.finance == MAX_STAT and player.tech == MAX_STAT) or
+                    (player.social == MAX_STAT and player.tech == MAX_STAT)):
                 player.win_by = 'max_stat'
                 player.win = True
                 return True
@@ -132,11 +143,19 @@ def test(runs=100, subtract_from_others=False):
         'zoomer': 0,
         'bloomer': 0,
     }
+    all_turns = 0
+    max_turns = -1
+    min_turns = 53
     draws = 0
     for i in range(0, runs):
         game = PeakMillenial(subtract_from_others=subtract_from_others)
         game.run()
         games.append(game)
+        all_turns += game.turn + 1
+        if game.turn + 1 > max_turns:
+            max_turns = game.turn + 1
+        if game.turn + 1 < min_turns:
+            min_turns = game.turn + 1
         if game.draw:
             draws += 1
         for role in ROLES:
@@ -148,16 +167,34 @@ def test(runs=100, subtract_from_others=False):
                 wins_by[player.win_by] += 1
             if player.out:
                 outs[role] += 1
+    turns = {
+        'avg': all_turns / runs,
+        'max': max_turns,
+        'min': min_turns,
+    }
+    wins_by['sanity'] = float(wins_by['sanity']) / float(runs)
+    wins_by['max_stat'] = float(wins_by['max_stat']) / float(runs)
     for role in ROLES:
+        wins[role] = float(wins[role]) / float(runs)
+        outs[role] = float(outs[role]) / float(runs)
         for stat in STATS:
             average_players[role].set_stat(stat, average_players[role].get_stat(stat) / runs)
     print('''
 Peak Millenial play test
 ========================
 
-*Number of runs:* {runs}
+Settings
+--------
 
-*Subtract from others:* {subtract_from_others}
+* *Number of runs:* {runs}
+* *Subtract from others:* {subtract_from_others}
+
+Turns per game
+----------------------
+
+Min | Average | Max
+----|---------|----
+{turns[min]: >3} | {turns[avg]: >7} | {turns[max]: >3}
 
 Draws
 -----
@@ -169,26 +206,26 @@ Wins
 
 Boomer | Doomer | Zoomer | Bloomer
 -------|--------|--------|--------
-{wins[boomer]: >6} | {wins[doomer]: >6} | {wins[zoomer]: >6} | {wins[bloomer]: >7}
+{wins[boomer]: >6.2%} | {wins[doomer]: >6.2%} | {wins[zoomer]: >6.2%} | {wins[bloomer]: >7.2%}
 
 Wins by
 -------
 
-*Sanity:* {wins_by[sanity]}
-
-*Max stats:* {wins_by[max_stat]}
+Sanity | Max stats
+-------|----------
+{wins_by[sanity]: >6.2%} | {wins_by[max_stat]: >9.2%}
 
 Outs
 ----
 
 Boomer | Doomer | Zoomer | Bloomer
 -------|--------|--------|--------
-{outs[boomer]: >6} | {outs[doomer]: >6} | {outs[zoomer]: >6} | {outs[bloomer]: >7}
+{outs[boomer]: >6.2%} | {outs[doomer]: >6.2%} | {outs[zoomer]: >6.2%} | {outs[bloomer]: >7.2%}
 
 Average stats
 -------------
 
-              | Boomer | Doomer | Zoomer | Bloomer
+*Stat*        | Boomer | Doomer | Zoomer | Bloomer
 --------------|--------|--------|--------|--------
 Finances      | {avg[boomer].finance: >6} | {avg[doomer].finance: >6} | {avg[zoomer].finance: >6} | {avg[bloomer].finance: >7}
 Technology    | {avg[boomer].tech: >6} | {avg[doomer].tech: >6} | {avg[zoomer].tech: >6} | {avg[bloomer].tech: >7}
@@ -197,6 +234,7 @@ Sanity        | {avg[boomer].sanity: >6} | {avg[doomer].sanity: >6} | {avg[zoome
 '''.format(
         runs=runs,
         subtract_from_others=subtract_from_others,
+        turns=turns,
         draws=draws,
         wins=wins,
         wins_by=wins_by,
@@ -205,5 +243,5 @@ Sanity        | {avg[boomer].sanity: >6} | {avg[doomer].sanity: >6} | {avg[zoome
 
 
 if __name__ == '__main__':
-    test()
-    test(subtract_from_others=True)
+    #test(runs=10000)
+    test(runs=10000, subtract_from_others=True)

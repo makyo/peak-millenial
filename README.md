@@ -40,8 +40,8 @@ The boomer begins, because of course, then play goes clockwise. For each turn, t
  4 | You post a Minions meme that gets shared to someone's Facebook wall (+1 social credit)
  5 | You give someone a loan (-1 finances, +1 social credit)
  6 | You buy a newfagled phone (-1 finances, +1 technology)
- 7 | You talk to the manager who is the bloomer (-1 social credit, +1 finances)
- 8 | You spend two hours on the phone with tech support who is the zoomer (-1 social credit, +1 technology)
+ 7 | You talk to the manager who is *the bloomer* (-1 social credit, +1 finances)
+ 8 | You spend two hours on the phone with tech support who is *the zoomer* (-1 social credit, +1 technology)
  9 | You decide you can live without a computer (-1 technology, +1 finances)
  J | You invest in a No Phone Zone cafe (-1 technology, +1 social credit)
  Q | You missend an angry email to your boss (-1 to all stats)
@@ -55,9 +55,9 @@ The boomer begins, because of course, then play goes clockwise. For each turn, t
  2 | You get an essay published on The Guardian taking down someone (+1 finances) 
  3 | You figure out how to start a podcast about generation gaps (+1 technology)
  4 | One of your tweets starts a trending hashtag that takes over someone's timeline (+1 social credit)
- 5 | You subscribe to the bloomer's patreon (-1 finances, +1 social credit)
+ 5 | You subscribe to *the bloomer's* patreon (-1 finances, +1 social credit)
  6 | You have to change cable providers to someone (-1 finance, +1 technology)
- 7 | You accept a loan from the well-off boomer (-1 social credit, +1 finance)
+ 7 | You accept a loan from *the well-off boomer* (-1 social credit, +1 finance)
  8 | You set up a go-fund-me for a new laptop and guilt a friend into helping (-1 social credit, +1 technology)
  9 | (-1 technology, +1 finance)
  J | (-1 technology, +1 social credit)
@@ -104,3 +104,56 @@ Win conditions
 --------------
 
 You win if you max out two stats to 20 or your sanity reaches zero. Maybe then you'll actually be happy!
+
+Peak Millenial play test
+========================
+
+Settings
+--------
+
+* *Number of runs:* 10000
+* *Subtract from others:* True
+
+Turns per game
+----------------------
+
+Min | Average | Max
+----|---------|----
+  1 |       8 |  45
+
+Draws
+-----
+
+*Draws:* 0
+
+Wins
+----:
+
+Boomer | Doomer | Zoomer | Bloomer
+-------|--------|--------|--------
+23.77% | 26.16% | 25.84% |  24.23%
+
+Wins by
+-------
+
+Sanity | Max stats
+-------|----------
+81.19% |    18.81%
+
+Outs
+----
+
+Boomer | Doomer | Zoomer | Bloomer
+-------|--------|--------|--------
+ 0.00% |  0.00% |  0.00% |   0.00%
+
+Average stats
+-------------
+
+*Stat*        | Boomer | Doomer | Zoomer | Bloomer
+--------------|--------|--------|--------|--------
+Finances      |      8 |      7 |      7 |       7
+Technology    |      7 |      7 |      8 |       7
+Social credit |      7 |      6 |      7 |       8
+Sanity        |      5 |      3 |      4 |       4
+
