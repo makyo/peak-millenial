@@ -202,7 +202,7 @@ Draws
 *Draws:* {draws}
 
 Wins
-----:
+----
 
 Boomer | Doomer | Zoomer | Bloomer
 -------|--------|--------|--------

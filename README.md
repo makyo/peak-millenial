@@ -127,7 +127,7 @@ Draws
 *Draws:* 0
 
 Wins
-----:
+----
 
 Boomer | Doomer | Zoomer | Bloomer
 -------|--------|--------|--------
