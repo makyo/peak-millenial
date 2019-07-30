@@ -111,8 +111,13 @@ Win conditions
 
 You win if you max out two stats to 10 or your sanity reaches zero. Maybe then you'll actually be happy! The other players can keep playing to see who gets out last.
 
-Peak Millenial play test
-========================
+About
+-----
+
+*Peak Millenial* was thought up by Madison Scott-Clary and Judith Phoenix during a road trip. It's released under a Creative Commons 4.0 Attribution license. The current play-test results are below.
+
+Peak Millenial play test results
+================================
 
 Settings
 --------

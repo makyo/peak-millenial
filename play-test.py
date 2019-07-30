@@ -1,4 +1,3 @@
-import math
 import random
 
 
@@ -189,8 +188,8 @@ def test(runs=100, subtract_from_others=False):
         for stat in STATS:
             average_players[role].set_stat(stat, average_players[role].get_stat(stat) / runs)
     print('''
-Peak Millenial play test
-========================
+Peak Millenial play test results
+================================
 
 Settings
 --------
