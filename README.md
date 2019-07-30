@@ -34,7 +34,7 @@ You cannot start with 0 Sanity or 10 of any other stat. If your draw and (de)buf
 Play
 ----
 
-The boomer begins, because of course, then play goes clockwise. For each turn, the player draws a card and performs the specified action. Most actions are performed against other players, some are formed against specific players. Every time you perform an action against another player, they lose a sanity point. Jokers mean an immediate loss of one sanity point. Sanity levels are kept secret, so you can either note those separately, or agree to read off the other three stats at the end of each round.
+The boomer begins, because of course, then play goes clockwise. For each turn, the player draws a card and performs the specified action. Most actions are performed against other players, some are formed against specific players. Every time you perform an action against another player, they lose a sanity point. Jokers mean an immediate loss of one sanity point. Sanity levels are kept secret, so you can either note those separately, or agree to read off the other three stats at the end of each round. If you would win on the first turn, you are instead knocked out of the game.
 
 ### Boomer
 
@@ -109,7 +109,7 @@ The boomer begins, because of course, then play goes clockwise. For each turn, t
 Win conditions
 --------------
 
-You win if you max out two stats to 10 or your sanity reaches zero. Maybe then you'll actually be happy!
+You win if you max out two stats to 10 or your sanity reaches zero. Maybe then you'll actually be happy! The other players can keep playing to see who gets out last.
 
 Peak Millenial play test
 ========================
@@ -125,7 +125,7 @@ Turns per game
 
 Min | Average | Max
 ----|---------|----
-  2 |      10 |  51
+  2 |      10 |  50
 
 Draws
 -----
@@ -137,21 +137,21 @@ Wins
 
 Boomer | Doomer | Zoomer | Bloomer
 -------|--------|--------|--------
-23.45% | 25.18% | 26.97% |  24.40%
+23.99% | 24.94% | 26.65% |  24.42%
 
 Wins by
 -------
 
 Sanity | Max stats
 -------|----------
-72.76% |    27.24%
+73.08% |    26.92%
 
 Outs
 ----
 
 Boomer | Doomer | Zoomer | Bloomer
 -------|--------|--------|--------
- 2.45% | 21.28% |  0.00% |   0.00%
+ 2.55% | 21.58% |  0.00% |   0.00%
 
 Average stats
 -------------
