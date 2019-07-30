@@ -3,6 +3,7 @@ import random
 
 ROLES = ('boomer', 'doomer', 'zoomer', 'bloomer')
 STATS = ('finance', 'tech', 'social', 'sanity')
+MAX_STAT = 10
 ACTIONS = (
     {'finance': 0, 'tech': 0, 'social': 0, 'sanity': -1},   # X
     {'finance': 0, 'tech': 0, 'social': 0, 'sanity': 1},    # A
@@ -20,12 +21,12 @@ ACTIONS = (
     {'finance': 1, 'tech': 1, 'social': 1, 'sanity': 1},    # K
 )
 TARGETS = {
-    'boomer': [None, None, None, None, 'doomer', None, None, 'bloomer', 'zoomer', None, None, None, None, None],
-    'doomer': [None, None, None, None, None, 'bloomer', None, 'boomer', None, None, None, None, None, None],
-    'zoomer': [None, None, None, None, None, 'doomer', None, 'boomer', None, None, None, None, None, None],
-    'bloomer': [None, None, None, None, None, 'zoomer', None, 'boomer', None, None, None, None, None, None],
+    #           X     A     2     3     4         5          6     7          8         9     10    J     Q     K
+    'boomer':  [None, None, None, None, 'doomer', None,      None, 'bloomer', 'zoomer', None, None, None, None, None],
+    'doomer':  [None, None, None, None, None,     'bloomer', None, 'boomer',  None,     None, None, None, None, None],
+    'zoomer':  [None, None, None, None, None,     'doomer',  None, 'boomer',  None,     None, None, None, None, None],
+    'bloomer': [None, None, None, None, None,     'zoomer',  None, 'boomer',  None,     None, None, None, None, None],
 }
-MAX_STAT = 10
 
 
 class Player(object):
