@@ -1,4 +1,4 @@
-Peak Millenial
+Peak Millennial
 ==============
 
 A one-page RPG about boomers, doomers, zoomers, and bloomers.
