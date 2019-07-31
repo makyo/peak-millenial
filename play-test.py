@@ -21,11 +21,11 @@ ACTIONS = (
     {'finance': 1, 'tech': 1, 'social': 1, 'sanity': 1},    # K
 )
 TARGETS = {
-    #           X     A     2     3     4         5          6     7          8         9     10    J     Q     K
-    'boomer':  [None, None, None, None, 'doomer', None,      None, 'bloomer', 'zoomer', None, None, None, None, None],
-    'doomer':  [None, None, None, None, None,     'bloomer', None, 'boomer',  None,     None, None, None, None, None],
-    'zoomer':  [None, None, None, None, None,     'doomer',  None, 'boomer',  None,     None, None, None, None, None],
-    'bloomer': [None, None, None, None, None,     'zoomer',  None, 'boomer',  None,     None, None, None, None, None],
+    #           X     A     2     3     4         5          6         7          8         9     10    J     Q     K
+    'boomer':  [None, None, None, None, 'doomer', None,      None,     'bloomer', 'zoomer', None, None, None, None, None],
+    'doomer':  [None, None, None, None, None,     'bloomer', None,     'boomer',  None,     None, None, None, None, None],
+    'zoomer':  [None, None, None, None, None,     'doomer',  None,     'boomer',  None,     None, None, None, None, None],
+    'bloomer': [None, None, None, None, None,     None,      'zoomer', 'boomer',  None,     None, None, None, None, None],
 }
 
 
@@ -189,8 +189,8 @@ def test(runs=100, subtract_from_others=False):
         for stat in STATS:
             average_players[role].set_stat(stat, average_players[role].get_stat(stat) / runs)
     print('''
-Peak Millenial play test results
-================================
+Peak Millennial play test results
+=================================
 
 Settings
 --------
