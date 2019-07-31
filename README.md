@@ -15,41 +15,39 @@ Setup
 
 1. Shuffle the deck of cards.
 2. Pass the deck around.
-    1. Each person draws and reveals a card, which determines their class (draw until you get a unique suit). ♦ = boomer; ♠ = doomer; ♥ = zoomer; ♣ = bloomer.
-    2. Then they draw and reveal three cards and announce/note their stats for Finances, Technology, and Social Credit (ace = 1, faces = 10, joker = reshuffle deck and draw again).
-    3. They draw one more card without showing anyone for their Sanity level.
-    4. Shuffle the deck.
+    1. Each person draws until they get a unique suit and reveals their class. ♦ = boomer; ♠ = doomer; ♥ = zoomer; ♣ = bloomer.
+    2. Then they draw and reveal three cards and announce/note their stats for FINances, TECHnology, and SOCial credit (ace = 1, faces = 10, joker = draw again).
+    3. Then they draw one more card without showing anyone for their SANity level.
+    4. Then they shuffle the deck.
 
 ### Additional (de)buffs
 
-* Boomers start with +1 Finances and +1 Sanity.
-* Doomers start with -2 Sanity.
-* Zoomers start with +1 Technology and +1 Sanity.
-* Bloomers start with +1 Social Credit and +1 Sanity.
+* Boomers start with +1 FIN and +1 SAN.
+* Doomers start with -2 SAN.
+* Zoomers start with +1 TECH and +1 SAN.
+* Bloomers start with +1 SOC and +1 SAN.
 
-### Notes
-
-You cannot start with 0 Sanity or 10 of any other stat. If your draw and (de)buffs would give you such, add/subtract such that your Sanity is no lower than 1 and other stats are no greater than 9.
+After applying, ensure the minimum for each stat is 1 and the maximum is 9
 
 Play
 ----
 
-The boomer begins, because of course, then play goes clockwise. For each turn, the player draws a card and performs the specified action. Most actions are performed against other players, some are formed against specific players. Every time you perform an action against another player, they lose a sanity point. Jokers mean an immediate loss of one sanity point. Sanity levels are kept secret, so you can either note those separately, or agree to read off the other three stats at the end of each round. If you would win on the first turn, you are instead knocked out of the game.
+The boomer begins, because of course, then play goes clockwise. For each turn, the player draws a card and performs the specified action. Most actions are performed against other players, and some are performed against specific players. Every time you perform an action against another player, they lose 1 SAN. Jokers mean an immediate loss of 1 SAN to the current player. SAN levels are kept secret, so you can either note those separately, or agree to read off the other three stats at the end of each round. If you would win on the first turn, you are instead knocked out of the game.
 
 ### Boomer
 
 &nbsp; | Result
 ---|---
- A | You go on a mediation retreat (+1 sanity)
- 2 | You raise the rent on your rental property on someone (+1 finances)
- 3 | You learn how to text from someone (+1 technology)
- 4 | You post a Minions meme that gets shared to *the doomer's* Facebook wall (+1 social credit)
- 5 | You give someone a loan (-1 finances, +1 social credit)
- 6 | You buy a newfagled phone (-1 finances, +1 technology)
- 7 | You talk to the manager who is *the bloomer* (-1 social credit, +1 finances)
- 8 | You spend two hours on the phone with tech support who is *the zoomer* (-1 social credit, +1 technology)
- 9 | You decide you can live without a computer (-1 technology, +1 finances)
- J | You invest in a No Phone Zone cafe (-1 technology, +1 social credit)
+ A | You go on a mediation retreat (+1 SAN)
+ 2 | You raise the rent on your rental property on someone (+1 FIN)
+ 3 | You learn how to text from someone (+1 TECH)
+ 4 | You post a Minions meme that gets shared to *the doomer's* Facebook wall (+1 SOC)
+ 5 | You give someone a loan (-1 FIN, +1 SOC)
+ 6 | You buy a newfagled phone (-1 FIN, +1 TECH)
+ 7 | You talk to the manager who is *the bloomer* (-1 SOC, +1 FIN)
+ 8 | You spend two hours on the phone with tech support who is *the zoomer* (-1 SOC, +1 TECH)
+ 9 | You decide you can live without a computer (-1 TECH, +1 FIN)
+ J | You invest in a No Phone Zone cafe (-1 TECH, +1 SOC)
  Q | You missend an angry email to your boss (-1 to all stats)
  K | You really enjoy your first free months of Amazon Prime (+1 to all stats)
 
@@ -57,16 +55,16 @@ The boomer begins, because of course, then play goes clockwise. For each turn, t
 
 &nbsp; | Result
 ---|---
- A | You finally seek out therapy (+1 sanity)
- 2 | You get an essay published on The Guardian taking down someone (+1 finances) 
- 3 | You figure out how to start a podcast about generation gaps (+1 technology)
- 4 | One of your tweets starts a trending hashtag that takes over someone's timeline (+1 social credit)
- 5 | You subscribe to *the bloomer's* patreon (-1 finances, +1 social credit)
- 6 | You have to change cable providers to someone (-1 finance, +1 technology)
- 7 | You accept a loan from *the well-off boomer* (-1 social credit, +1 finance)
- 8 | You set up a go-fund-me for a new laptop and guilt a friend into helping (-1 social credit, +1 technology)
- 9 | (-1 technology, +1 finance)
- J | (-1 technology, +1 social credit)
+ A | You finally seek out therapy (+1 SAN)
+ 2 | You get an essay published on The Guardian taking down someone (+1 FIN)
+ 3 | You figure out how to start a podcast about generation gaps (+1 TECH)
+ 4 | One of your tweets starts a trending hashtag that takes over someone's timeline (+1 SOC)
+ 5 | You subscribe to *the bloomer's* patreon (-1 FIN, +1 SOC)
+ 6 | You have to change cable providers to someone (-1 finance, +1 TECH)
+ 7 | You accept a loan from *the well-off boomer* (-1 SOC, +1 FIN)
+ 8 | You set up a go-fund-me for a new laptop and guilt a friend into helping (-1 SOC, +1 TECH)
+ 9 | (-1 TECH, +1 FIN)
+ J | (-1 TECH, +1 SOC)
  Q | (-1 to all stats)
  K | (+1 to all stats, except sanity)
 
@@ -74,16 +72,16 @@ The boomer begins, because of course, then play goes clockwise. For each turn, t
 
 &nbsp; | Result
 ---|---
- A | You get invited to a product beta (+1 sanity)
- 2 | 
- 3 | 
- 4 | 
- 5 | 
- 6 | (-1 finance, +1 technology)
- 7 | (-1 social credit, +1 finance
- 8 | (-1 social credit, +1 technology)
- 9 | (-1 technology, +1 finance)
- J | (-1 technology, +1 social credit)
+ A | You get invited to a product beta (+1 SAN)
+ 2 |
+ 3 |
+ 4 |
+ 5 |
+ 6 | (-1 finance, +1 TECH)
+ 7 | (-1 SOC, +1 FIN)
+ 8 | (-1 SOC, +1 TECH)
+ 9 | (-1 TECH, +1 FIN)
+ J | (-1 TECH, +1 SOC)
  Q | (-1 to all stats)
  K | (+1 to all stats)
 
@@ -91,16 +89,16 @@ The boomer begins, because of course, then play goes clockwise. For each turn, t
 
 &nbsp; | Result
 ---|---
- A | You get into TikTok (+1 sanity)
- 2 | 
- 3 | 
- 4 | 
- 5 | 
- 6 | (-1 finance, +1 technology)
- 7 | (-1 social credit, +1 finance
- 8 | (-1 social credit, +1 technology)
- 9 | (-1 technology, +1 finance)
- J | (-1 technology, +1 social credit)
+ A | You get into TikTok (+1 SAN)
+ 2 |
+ 3 |
+ 4 |
+ 5 |
+ 6 | (-1 finance, +1 TECH)
+ 7 | (-1 SOC, +1 FIN)
+ 8 | (-1 SOC, +1 TECH)
+ 9 | (-1 TECH, +1 FIN)
+ J | (-1 TECH, +1 SOC)
  Q | (-1 to all stats)
  K | (+1 to all stats)
 
@@ -167,4 +165,3 @@ Finances      |      6 |      6 |      6 |       6
 Technology    |      6 |      6 |      6 |       6
 Social credit |      6 |      5 |      6 |       6
 Sanity        |      5 |      2 |      5 |       5
-
