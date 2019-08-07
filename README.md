@@ -3,6 +3,10 @@ Peak Millennial v1.0
 
 A one-page RPG about boomers, doomers, zoomers, and bloomers.
 
+![The game](game.svg)
+
+You can find the print version [here](game.pdf). Simply print it out, fold it in half length wise, then fold along the lines to make a rectangle with each side facing the appropriate player.
+
 Requirements
 ------------
 
