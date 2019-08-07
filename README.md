@@ -128,7 +128,7 @@ Win/lose conditions
 About
 -----
 
-*Peak Millennial* was created by Madison Scott-Clary and Judith Phoenix during a road trip. It's released under a Creative Commons 4.0 Attribution license. The current randomized play-test results are below.
+*Peak Millennial* was created by Madison Scott-Clary and Judith Phoenix during a road trip. It's released under a Creative Commons 4.0 Attribution-ShareAlike license. The current randomized play-test results are below.
 
 Peak Millennial play test results
 ================================
