@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.6004902"
-     inkscape:cx="432.99234"
-     inkscape:cy="330.64708"
+     inkscape:cx="243.98775"
+     inkscape:cy="1080.4174"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -59,7 +59,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
       </cc:Work>
@@ -756,7 +756,7 @@
          x="28.218327"
          y="-15.345863"
          style="font-size:3.52777767px;line-height:1.10000002;text-align:end;text-anchor:end;stroke-width:0.26458332"
-         id="tspan1463"></tspan><tspan
+         id="tspan1463" /><tspan
          sodipodi:role="line"
          x="28.996918"
          y="-11.11253"
@@ -886,7 +886,7 @@
          x="29.109222"
          y="-24.190521"
          style="font-size:2.82222223px;line-height:0.99999998%;stroke-width:0.26458332"
-         id="tspan1982">Just an off day today (skip this turn).</tspan><tspan
+         id="tspan1982">Just an off day today (no effect).</tspan><tspan
          sodipodi:role="line"
          x="29.109222"
          y="-19.957188"
@@ -1135,7 +1135,7 @@
          x="98.814903"
          y="-24.099197"
          style="font-size:2.82222223px;line-height:0.99999998%;stroke-width:0.26458332"
-         id="tspan1982-8">Just an off day today (skip this turn).</tspan><tspan
+         id="tspan1982-8">Just an off day today (no effect).</tspan><tspan
          sodipodi:role="line"
          x="98.814903"
          y="-19.865864"
@@ -1229,7 +1229,7 @@
          x="167.80182"
          y="-36.383793"
          style="font-size:3.52777767px;line-height:1.10000002;text-align:end;text-anchor:end;stroke-width:0.26458332"
-         id="tspan1970-1-3"></tspan><tspan
+         id="tspan1970-1-3" /><tspan
          sodipodi:role="line"
          x="168.58041"
          y="-32.150459"
@@ -1396,7 +1396,7 @@
          x="168.69269"
          y="-24.061783"
          style="font-size:2.82222223px;line-height:0.99999998%;stroke-width:0.26458332"
-         id="tspan1982-8-4">Just an off day today (skip this turn).</tspan><tspan
+         id="tspan1982-8-4">Just an off day today (no effect).</tspan><tspan
          sodipodi:role="line"
          x="168.69269"
          y="-19.828449"
@@ -1463,7 +1463,7 @@
          x="237.15953"
          y="-57.512661"
          style="font-size:3.52777767px;line-height:1.10000002;text-align:end;text-anchor:end;stroke-width:0.26458332"
-         id="tspan1451-5-4"></tspan><tspan
+         id="tspan1451-5-4" /><tspan
          sodipodi:role="line"
          x="237.93813"
          y="-53.279327"
@@ -1655,7 +1655,7 @@
          x="238.05042"
          y="-24.023987"
          style="font-size:2.82222223px;line-height:0.99999998%;stroke-width:0.26458332"
-         id="tspan1982-8-8">Just an off day today (skip this turn).</tspan><tspan
+         id="tspan1982-8-8">Just an off day today (no effect).</tspan><tspan
          sodipodi:role="line"
          x="238.05042"
          y="-19.790653"
@@ -1687,7 +1687,7 @@
            height="18.571428"
            x="234.28572"
            y="78.14286" /></flowRegion><flowPara
-         id="flowPara2842"></flowPara></flowRoot>    <text
+         id="flowPara2842" /></flowRoot>    <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Gentium Basic';-inkscape-font-specification:'Gentium Basic';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        x="262.18277"
