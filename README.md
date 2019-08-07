@@ -53,7 +53,8 @@ Play
  7 | You talk to the manager who is *the bloomer* (-1 SOC, +1 FIN)
  8 | You spend two hours on the phone with tech support who is *the zoomer* (-1 SOC, +1 TECH)
  9 | You decide you can live without a computer (-1 TECH, +1 FIN)
- J | You invest in a No Phone Zone cafe with someone (-1 TECH, +1 SOC)
+ 10 | You invest in a No Phone Zone cafe with someone (-1 TECH, +1 SOC)
+ J | Just an off day today (skip this turn)
  Q | You missend an angry email to your boss (-1 to all stats)
  K | You really enjoy your first free months of Amazon Prime (+1 to all stats)
 
@@ -70,7 +71,8 @@ Play
  7 | You accept a loan from the well-off *boomer* (-1 SOC, +1 FIN)
  8 | You set up a go-fund-me for a new laptop and guilt a friend into helping (-1 SOC, +1 TECH)
  9 | You bin your old phone instead of recycling it (-1 TECH, +1 FIN)
- J | You recycle your old phone instead of binning it (-1 TECH, +1 SOC)
+ 10 | You recycle your old phone instead of binning it (-1 TECH, +1 SOC)
+ J | Just an off day today (skip this turn)
  Q | You sleep through work (-1 to all stats)
  K | You sleep thirteen hours straight and still make work on time (+1 to all stats, except sanity)
 
@@ -87,7 +89,8 @@ Play
  7 | The ads *the boomer* took out show up on your video essays on YouTube (-1 SOC, +1 FIN)
  8 | You get a sponsored gaming rig from someone (-1 SOC, +1 TECH)
  9 | You sell a sponsored gaming rig to someone (-1 TECH, +1 FIN)
- J | You give away a copy of your indie game to someone (-1 TECH, +1 SOC)
+ 10 | You give away a copy of your indie game to someone (-1 TECH, +1 SOC)
+ J | Just an off day today (skip this turn)
  Q | A transformer blows and takes out your power supply (-1 to all stats)
  K | You get invited to a product beta (+1 to all stats)
 
@@ -104,7 +107,8 @@ Play
  7 | Your *boomer* parents let you have their old car (-1 SOC, +1 FIN)
  8 | Someone helps you land a job at [insert much-maligned tech company] (-1 SOC, +1 TECH)
  9 | You sell your desktop to someone, having decided you only need a laptop (-1 TECH, +1 FIN)
- J | You swap phones with someone who needs a nicer one (-1 TECH, +1 SOC)
+ 10 | You swap phones with someone who needs a nicer one (-1 TECH, +1 SOC)
+ J | Just an off day today (skip this turn)
  Q | A down-swing leads to a dry spell (-1 to all stats)
  K | You make it big on TikTok (+1 to all stats)
 
