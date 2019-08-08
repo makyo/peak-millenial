@@ -3,10 +3,7 @@ Peak Millennial v1.0
 
 A one-page RPG about boomers, doomers, zoomers, and bloomers.
 
-<style>
-@import url('https://fonts.googleapis.com/css?family=Gentium+Basic|Spectral+SC&display=swap');
-</style>
-[![The game](game.svg)](game.pdf)
+[![The game](game.png)](game.pdf)
 
 You can find the print version [here](game.pdf). Simply print it out, fold it in half length wise, then fold along the lines to make a rectangle with each side facing the appropriate player.
 
