@@ -1,10 +1,6 @@
 Peak Millennial v1.0
 ====================
 
-<style>
-@import url('https://fonts.googleapis.com/css?family=Gentium+Basic|Spectral+SC&display=swap');
-</style> 
-
 A one-page RPG about boomers, doomers, zoomers, and bloomers.
 
 [![The game](game.svg)](game.pdf)
